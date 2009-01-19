@@ -1,0 +1,67 @@
+xclip
+------------------------------------------
+xclip is a command line utility that is designed to run on any system 
+with an X11 implementation. It provides an interface to X selections 
+(the clipboard) from the command line. It can read data from standard in 
+or a file and place it in an X selection for pasting into other X 
+applications. xclip can also print an X selection to standard out, which 
+can then be redirected to a file or another program.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libX11_6-1.1.5-1
+  libXmu6-1.0.4-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://sourceforge.net/projects/xclip/
+
+Canonical download:
+  http://downloads.sourceforge.net/xclip/
+
+-------------------------------------------
+
+Build instructions:
+  unpack xclip-0.11-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xclip-0.11-X.cygport all
+
+This will create:
+  /usr/src/xclip-0.11-X-src.tar.bz2
+  /usr/src/xclip-0.11-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/xclip-copyfile
+  /usr/bin/xclip-cutfile
+  /usr/bin/xclip-pastefile
+  /usr/bin/xclip.exe
+  /usr/share/doc/xclip-0.11/COPYING
+  /usr/share/doc/xclip-0.11/ChangeLog
+  /usr/share/doc/xclip-0.11/README
+  /usr/share/man/man1/xclip.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.11-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

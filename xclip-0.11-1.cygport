@@ -1,0 +1,4 @@
+DESCRIPTION="X11 clipboard command-line interface"
+HOMEPAGE="http://sourceforge.net/projects/xclip/"
+SRC_URI="mirror://sourceforge/xclip/${P}.tar.gz"
+PATCH_URI="0.11-vpath.patch"
