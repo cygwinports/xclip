@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libX11_6 libXmu6
+requires: libX11_6 libXmu6
 sdesc: "X11 clipboard command line interface"
 ldesc: "xclip is a command line utility that is designed to run on any 
 system with an X11 implementation. It provides an interface to X 
